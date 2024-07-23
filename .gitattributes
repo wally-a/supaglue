@@ -1,0 +1,12 @@
+/.yarn/**                         linguist-vendored
+/.yarn/releases/*                 binary
+/.yarn/plugins/**/*               binary
+/.pnp.*                           binary linguist-generated
+/packages/schemas/gen/**/*        linguist-generated
+openapi/**/openapi.bundle.json    linguist-generated
+*.example.json                    linguist-generated
+/docs/docs/api/**/*               linguist-generated
+/docs/docs/api/introduction.md    -linguist-generated
+*.openapi.yaml                    linguist-generated
+*.openapi.json                    linguist-generated
+*.openapi.gen.d.ts                linguist-generated

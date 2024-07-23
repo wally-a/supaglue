@@ -1,0 +1,34 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "sourceType": "module",
+    "requireConfigFile": false
+  },
+  "env": {
+    "node": true,
+    "es2020": true,
+    "jest": true
+  },
+  "rules": {
+    "curly": 1,
+    "prettier/prettier": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      }
+    ],
+    "no-console": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
+    "@typescript-eslint/consistent-type-imports": "error"
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "coverage/", "/packages/schemas/gen/", "/packages/core/jest.config.js", "*.openapi.gen.d.ts"]
+}

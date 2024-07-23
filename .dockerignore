@@ -1,0 +1,5 @@
+.git
+.yarn/cache
+**/node_modules
+docs
+**/.next
